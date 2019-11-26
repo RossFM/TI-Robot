@@ -1,16 +1,18 @@
+import sys
+
 try:
     input = open("input.txt", "r") #Read input file from current directory
 
     if input.mode == 'r': #if in read mode, read the file
         contents = input.read()
         data = contents.split('\n') #Create a list, each new line in the file being an element
-except Exception as e:
-    raise
 
-roomx,roomy = list(map(int, data[0].split())) #Room Dimension - from first line of input
-x,y = list(map(int, data[1].split())) #Starting position of hoover, second line of input
-del data[0] #Remove room dimension line from data
-del data[0] #Remove hoover position from data
+    roomx,roomy = list(map(int, data[0].split())) #Room Dimension - from first line of input
+    x,y = list(map(int, data[1].split())) #Starting position of hoover, second line of input
+    del data[0] #Remove room dimension line from data
+    del data[0] #Remove hoover position from data
+except Exception as e:
+    sys.exit("Input not formatted as expected, please check and try again")
 
 dirt = [] #init list for dirt positions
 dir = '' #init sting for directions
