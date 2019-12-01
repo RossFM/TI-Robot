@@ -41,8 +41,12 @@ for char in split(dir): #Turn each meaningful char instruction into movement of 
         print("Invalid direction in input file. Will ignore and continue")
     if x > roomx: #if hoover reaches the edges of the room it skids in place
         x = x - 1
+    if x < 0:
+        x = x +1
     if y > roomy:
         y = y - 1
+    if y < 0:
+        y = y + 1
 
     for dust in dirt: #if a hoover movement reaches a piece of dirt...
         if [x,y] == dust:
