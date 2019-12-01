@@ -9,7 +9,7 @@ This application requires Python to run, and as such can run on a wide variety o
 
 Python can be obtained from https://www.python.org/downloads/ Simply follow the installation guide relevant for your operating system.
 
-This repo should then be cloned to a folder of your choosing. Within the folder will be 'input.txt', which can be editied depending on the data you wish to enter. Coordinates are entered with a single space seperating each x & y value, and a new line fr each nw coordinate. An example 'input.txt' is provided within the repo, with explanations for each line shown below:
+This repo should then be cloned to a folder of your choosing. Within the folder will be 'input.txt', which can be editied depending on the data you wish to enter. Coordinates are entered with a single space seperating each x & y value, and a new line for each new coordinate. An example 'input.txt' is provided within the repo, with explanations for each line shown below:
 
 `5 5` - This first line specifies the dimensions of the room to be cleaned  
 `1 2` - Second line gives the starting position of the hoover  
@@ -21,7 +21,7 @@ This repo should then be cloned to a folder of your choosing. Within the folder 
 
 The application is run using:  
 `python Roomby.py`  
-Ensure 'input.txt' is in the same sirectory before running the application.
+Ensure 'input.txt' is in the same directory before running the application.
 
 
 <b>Output</b>  
